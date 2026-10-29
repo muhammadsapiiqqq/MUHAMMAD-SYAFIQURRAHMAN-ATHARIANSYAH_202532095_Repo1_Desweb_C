@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lapor Penampakan - Burung Endemik Indonesia</title>
+</head>
+<body>
+
+  <header>
+    <h1>Lapor Penampakan Burung</h1>
+    <p>Bantu pendataan burung endemik dengan melaporkan yang kamu lihat</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="katalog.html">Katalog Spesies</a></li>
+      <li><a href="lapor.html">Lapor Penampakan</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Formulir Laporan</h2>
+      <p>Isi semua kolom bertanda wajib, lalu tekan tombol kirim.</p>
+
+      <form action="lapor.html" method="get">
+
+        <fieldset>
+          <legend>Data Pelapor</legend>
+
+          <p>
+            <label for="nama">Nama lengkap (wajib):</label><br>
+            <input type="text" id="nama" name="nama" minlength="3" required>
+          </p>
+
+          <p>
+            <label for="email">Email (wajib):</label><br>
+            <input type="email" id="email" name="email" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Data Penampakan</legend>
+
+          <p>Jenis burung yang dilihat (wajib):</p>
+          <p>
+            <input type="radio" id="jalak" name="burung" value="jalak-bali" required>
+            <label for="jalak">Jalak Bali</label><br>
+
+            <input type="radio" id="elang" name="burung" value="elang-jawa">
+            <label for="elang">Elang Jawa</label><br>
+
+            <input type="radio" id="maleo" name="burung" value="maleo">
+            <label for="maleo">Maleo</label><br>
+
+            <input type="radio" id="kakatua" name="burung" value="kakatua-jambul-kuning">
+            <label for="kakatua">Kakatua Jambul Kuning</label><br>
+
+            <input type="radio" id="cenderawasih" name="burung" value="cenderawasih-kecil">
+            <label for="cenderawasih">Cenderawasih Kecil</label>
+          </p>
+
+          <p>
+            <label for="tanggal">Tanggal penampakan (wajib):</label><br>
+            <input type="date" id="tanggal" name="tanggal" required>
+          </p>
+
+          <p>
+            <label for="catatan">Catatan lokasi dan kondisi burung:</label><br>
+            <textarea id="catatan" name="catatan" rows="5" cols="40" placeholder="Contoh: terlihat di hutan dekat danau pagi hari"></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="setuju" name="setuju" value="ya" required>
+          <label for="setuju">Saya menyatakan laporan ini benar (wajib).</label>
+        </p>
+
+        <p>
+          <button type="submit">Kirim Laporan</button>
+          <button type="reset">Reset</button>
+        </p>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Burung Endemik Indonesia. Dibuat oleh Muhammad Syafiqurrahman Athariansyah (202532095).</p>
+  </footer>
+
+</body>
+</html>
